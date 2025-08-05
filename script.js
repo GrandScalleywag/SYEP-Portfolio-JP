@@ -1,31 +1,73 @@
-console.log("Script loaded successfully");
+const review = [
+    {
+        id: 1,
+        name: 'Susan Smith',
+        img: '#',
+        text: 'uhydfigdbh ugtdjnfbhb jdfhu erijkdf khurnj',
+    },
 
-let chicken = 123;
-console.log(chicken);
-console.log(typeof chicken);
+     {
+        id: 2,
+        name: 'John Pork',
+        img: '#',
+        text: 'uhydfigdbh ugtdjnfbhb jdfhu erijkdf khurnj',
+    },
 
-console.log(10 + "eggs");
-console.log(10 + 8 + "eggs");
-console.log("eggs" + 10 + 8);
-console.log(3 !== 7);
+     {
+        id: 3,
+        name: 'Peter Jones',
+        img: '#',
+        text: 'uhydfigdbh ugtdjnfbhb jdfhu erijkdf khurnj',
+    },
+];
 
-console.log(7>3)&&(10>8);
+const img = document.getElementById('person-img');
+const author = document.getElementById('author');
+const job = document.getElementById('job');
+const info = document.getElementById('info');
 
-//Only one condition must be true
-console.log(10>3)||(5>10);
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
 
-//If the statement is logical or not
-console.log(!5>3);
+let currentItem = 0;
+window.addEventListener('DOMContentLoaded', function () {
+    showPerson();
+});
 
-const hour = new Date().getHours();
-let greeting = "";
+function showPerson() {
+    const item = review[currentItem];
+    img.src = item.img;
+    author.textContent = item.name;
+    job.textContent = item.job;
+    info.textContent = item.text;
+};
 
-if (hour<12){
-    greeting = "Good morning "
-}else if (hour<18){
-    greeting = "Good afternoon"
-}else{
-    greeting = "Good evening"
-}
+function showPerson(person){
+    const item = reviews[person];
+    img.src = item.img;
+    author.textContent = item.name;
+    job.textContent = item.job;
+    info.textContent = item.text;
+};
 
-document.getElementById("greeting").innerText = greeting;
+nextBtn.addEventListener(
+    'click',
+    function () {
+        currentItem++;
+        if (currentItem > review.length - 1) {
+            currentItem = 0;
+        }
+        showPerson(currentItem);
+    }
+);
+
+prevBtn.addEventListener(
+    'click',
+    function () {
+        currentItem--;
+        if (currentItem < 0) {
+            currentItem = review.length - 1;
+        }
+        showPerson(currentItem);
+    }
+);
