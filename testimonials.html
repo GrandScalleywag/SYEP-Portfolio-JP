@@ -1,91 +1,60 @@
-<!DOCTYPE html> <!--This  tells the browser what kind of file we're writing-->
+<!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JP's Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="style2.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-        <p id="Jayden P"></p>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        <a class="nav-link" href="index.html#about">About Me</a>
-        <a class="nav-link" href="index.html#skills">My Skills</a>
-        <a class="nav-link" href="testimonials.html">Testimonials</a>
-        <a class="nav-link disabled" aria-disabled="true">disabled</a>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">JP's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="index.html#about">About me</a>
+          <a class="nav-link" href="index.html#skills">Skills</a>
+          <a class="nav-link" href="testimonials.html">Testimonials</a>
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-    <main>
-        <section class="container">
-            <div class="title">
-                <h2>Testimonials</h2>
-                <div class="underline"></div>
+  <main>
+    <section class="container">
+      <div class="title">
+        <h2>Testimonials</h2>
+        <div class="underline"></div>
+      </div>
+      <article class="review">
+        <div class="img-container">
+          <img src="IMG_20250806_153512_309.jpg" width="430px" height="250px" id="person-img" alt="Person"/>
+        </div>
+        <h4 id="author">Akheel Dixon</h4>
+        <p id="job">Web Developer</p>
+        <p id="info">
+          "JP. He's a creative person that listens pretty well. His intellect and personality is pretty cool and sometimes he's joking around and other times he switches to a smart person that genuinely knows what he's talking about. Overall JP is a smart, imaginative, and a very adaptive person."
+        </p>
+        <div class="button-container">
+          <button class="prev-btn">
+            <i class="fas fa-chevron-left"></i> Prev
+          </button>
+          <button class="next-btn">
+            Next <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </article>
+    </section>
+  </main>
 
-            </div>
-
-            <article class="review">
-                <div class="img-container">
-                    <img src="#" id="person.img"/>
-                </div>
-
-                <h4 id="author">Insert Name Here</h4>
-                <p id="job">Insert Job Here</p>
-                <p id="info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, cumque? Doloribus, voluptates.
-                    doloremque, voluptates. Doloribus
-                </p>
-
-                <div class="button-container">
-                    <button class="prev-btn">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-
-                    
-                    <button class="prev-btn">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-
-                    
-                    <button class="next-btn">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>"
-
-
-
-
-
-            </article>
-
-        </section>
-    </main>
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js&quot; integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
-
-
 </html>
