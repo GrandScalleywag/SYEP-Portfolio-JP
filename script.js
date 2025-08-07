@@ -1,8 +1,8 @@
 const reviews = [{
         id: 1,
-        name: "Jayden Paulino",
-        img: '#',
-        text: "Excellent service and friendly staff!",
+        name: "Akheel Dixon",
+        img: 'IMG_20250806_153512_309.jpg',
+        text: "JP. He's a creative person that listens pretty well. His intellect and personality is pretty cool and sometimes he's joking around and other times he switches to a smart person that genuinely knows what he's talking about. Overall JP is a smart, imaginative, and a very adaptive person.",
         date: "2023-10-01"
     },
     {
