@@ -3,21 +3,21 @@ const reviews = [{
         name: "Akheel Dixon",
         img: 'IMG_20250806_153512_309.jpg',
         text: "JP. He's a creative person that listens pretty well. His intellect and personality is pretty cool and sometimes he's joking around and other times he switches to a smart person that genuinely knows what he's talking about. Overall JP is a smart, imaginative, and a very adaptive person.",
-        date: "2023-10-01"
+        date: "2025-09-08"
     },
     {
         id: 2,
-        name: "Jane Smith",
+        name: "Eddie Hines",
         img: '#',
-        text: "Very good experience, will come again.",
-        date: "2023-10-02"          
+        text: "JP is a nice guy who knows how to lighten the mood. He can also be silly sometimes, but he also knows when to be serious. He's always there for you and has a really charming personality.",
+        date: "2025-10-08"
     },
   {
         id: 1,
-        name: "nohj Doe",
-        img: '#',
-        text: " friendly staff!",
-        date: "2023-10-01"
+        name: "Jaylen Brunsen",
+        img: 'IMG_20250806_154400_322.jpg',
+        text: "JP is a guy you can joke around with and trust to lighten the mood. Overall a cool guy and great team player.",
+        date: "2025-10-08"
     },
    
 
