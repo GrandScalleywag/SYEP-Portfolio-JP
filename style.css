@@ -1,11 +1,13 @@
+.section-title {
+    color: rgb(128, 55, 201) !important;
+}
 /* Make About Me paragraph text white */
 /* Use a visually appealing accent color for About Me text */
+/* Use a visually appealing teal color for About Me text */
 .about-text {
-    color: rgb(128, 55, 201); /* matches .accent and section-title */
+    color: #008080;
 }
-}
-/* Match new index.html structure, keep original colors */
-.hero-content {
+
     padding: 20px 10px;
     background-color: navajowhite;
     border-radius: 20px;
