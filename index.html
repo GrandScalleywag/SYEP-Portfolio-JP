@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> JP's Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link href"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -24,6 +24,7 @@
         <a class="nav-link" href="index.html#about">About Me</a>
         <a class="nav-link" href="index.html#skills">My Skills</a>
         <a class="nav-link" href="testimonials.html">Testimonials</a>
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
       </div>
     </div>
   </div>
@@ -31,75 +32,94 @@
 
 <body>
 
-    <section>
-        <navigation>
-            <div id="navigation" style="max-width: 960px;">
-                <ul>
-                    <li>Link 1</li>
-                    <li>Link 2</li>
-                    <li>Link 3</li>
-                    <li>Link 4</li>
-                    <li>Link 5</li>
-                </ul>
-            </div>
-        </navigation>
-        <center>
-            <img> 
-            <!-- empty for now -->
-        </center>
-    </section>
+    <!-- Optional: Remove unused navigation section for cleaner look -->
 
     <hr />
     <br />
 
-    <section>
-        <h2>Projects</h2>
-        <div class="project">
-                <h3>Project 1</h3>
-                <img>
-        </div>
-        <div class="project">Project 2</div>
-        <div class="project">Project 3</div>
-    </section>
-
     <section id="home" class="hero">
-        <img src="cac.jpg" alt="My Profile Picture">
-        <h2>Hi, I am <span class="accent">Jayden Paulino</span></h2>
-        <p>I'm a high school student learning web development!</p>
+        <div class="hero-content text-center py-5" style="background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%); border-radius: 20px; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+            <img src="cac.jpg" alt="My Profile Picture" class="rounded-circle shadow-lg mb-3" width="160" height="160">
+            <h2 class="fw-bold">Hi, I am <span class="accent">Jayden Paulino</span></h2>
+            <p class="lead">I'm a high school student learning web development!</p>
+        </div>
     </section>
 
     <section id="about" class="section">
-        <h2>About Me</h2>
-        <img src="20250802_185944.jpg" width="235px" height="225px" alt="Myself">
-        <p>My hobbies are baking, swimming, rollerblading, and playing games.
-           I enjoy spending time with family and hanging out with the people around me.
-           I have raised multiple pets and animals and I currently have just one cat. 
-           I have 2 older siblings and one younger brother. In the future I plan to explore
-           many career paths and find what is best for me. As of current I am focusing on
-           deciding what I want to do in life and what colleges I want to go to and I also
-           am planning on building skills and gaining experience.
-        </p> 
+        <h2 class="section-title">About Me</h2>
+        <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+            <img src="20250802_185944.jpg" width="245" height="225" alt="Myself" class="rounded shadow">
+            <p class="fs-5 about-text">I am Jayden Paulino and as of current I am focusing on deciding what I want to do in life and what colleges I want to go to. I am planning on building skills and gaining experience. I am an aspiring web developer and I have been honing my skills in HTML, CSS, and JavaScript. I love working with technology and besides web development I have many careers that I'm interested in. I want to eventually become a pilot but I also like things like veterinary work and architecture.</p>
+        </div>
 
     </section>
 
     <section id="skills" class="section">
-        <h2>My skills</h2>
-        <div class="grid">
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>JavaScript</div>
+        <h2 class="section-title">My Skills</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-3">
+                <div class="skill-card p-3 rounded shadow-sm">HTML</div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="skill-card p-3 rounded shadow-sm">CSS</div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="skill-card p-3 rounded shadow-sm">JavaScript</div>
+            </div>
         </div>
     </section>
     <section id="skills" class="section">
-        <h2>Second skills</h2>
-        <div>Adaptability</div>
-        <div>Communication</div>
+        <h2 class="section-title">Other Skills</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-3">
+                <div class="skill-card p-3 rounded shadow-sm">Adaptability</div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="skill-card p-3 rounded shadow-sm">Communication</div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="skill-card p-3 rounded shadow-sm">Creativity</div>
+            </div>
+        </div>
     </section>
+    </section>
+    
+    <section id="Projects" class="section">
+        <h2>Achievements and Projects</h2>
+       <div class="row">
+           <div class="col-md-4 mb-4">
+               <div class="card h-100 shadow-sm">
+                   <div class="card-body">
+                       <h3 class="card-title">Project 1</h3>
+                       <p class="card-text">Participated in charity to my community by giving out cans of food.</p>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-4 mb-4">
+               <div class="card h-100 shadow-sm">
+                   <div class="card-body">
+                       <h3 class="card-title">Project 2</h3>
+                       <p class="card-text">Did volunteer work in the Catskill mountains by cleaning waterbars.</p>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-4 mb-4">
+               <div class="card h-100 shadow-sm">
+                   <div class="card-body">
+                       <h3 class="card-title">Project 3</h3>
+                       <p class="card-text">I plan to expand this portfolio as well as my resume.</p>
+                   </div>
+               </div>
+           </div>
+       </div>
     </section>
 
     <section id="contact" class="section">
-        <h2>Contact Info</h2>
-        <p>You can contact me via email <a href="mailto:Paulinojayden9@gmail.com">here</a></p>
+        <h2 class="section-title">Contact Info</h2>
+        <div class="contact-box p-4 rounded shadow-sm bg-light">
+            <p class="fs-5">You can contact me via email <a href="mailto:Paulinojayden9@gmail.com" class="link-primary">here</a></p>
+            <p class="fs-6 mt-3">Or my second email: <a href="mailto:Jaydenpaulino63@gmail.com" class="link-primary">Here</a></p>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
