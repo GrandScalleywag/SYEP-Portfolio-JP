@@ -1,9 +1,71 @@
+.sticky-top {
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+    background: #fff8dc;
+    box-shadow: 0 2px 12px rgba(128,55,201,0.08);
+    transition: box-shadow 0.3s;
+}
+.navbar-nav .nav-link.active {
+    color: #9062a5 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #9062a5;
+    background: rgba(235,191,255,0.12);
+    border-radius: 8px 8px 0 0;
+}
+.svg-shape {
+    pointer-events: none;
+    z-index: 0;
+}
+.parallax-bg {
+    animation: parallaxMove 30s linear infinite alternate;
+}
+@keyframes parallaxMove {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(40px);}
+}
+.back-to-top {
+    box-shadow: 0 4px 16px rgba(128,55,201,0.18);
+    transition: background 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back-to-top:focus {
+    outline: 2px solid #9062a5;
+}
+.card, .skill-card {
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.card:hover, .skill-card:hover {
+    box-shadow: 0 12px 32px rgba(128,55,201,0.18);
+    transform: translateY(-8px) scale(1.05);
+}
+.profile-img {
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.profile-img:hover {
+    box-shadow: 0 16px 48px rgba(128,55,201,0.22);
+    transform: scale(1.12) rotate(-2deg);
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.2s cubic-bezier(.77,0,.18,1), transform 1.2s cubic-bezier(.77,0,.18,1);
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: none;
+}
 .section-title {
     color: rgb(128, 55, 201) !important;
 }
-/* Make About Me paragraph text white */
-/* Use a visually appealing accent color for About Me text */
-/* Use a visually appealing teal color for About Me text */
+.about {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(128,55,201,0.12);
+}
 .about-text {
     color: #008080;
 }
@@ -57,7 +119,77 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+.animated-gradient {
+    background: linear-gradient(270deg, #e0eafc, #cfdef3, #ebbfff, #9062a5, #e0eafc);
+    background-size: 1200% 1200%;
+    animation: gradientMove 18s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {background-position:0% 50%}
+    50% {background-position:100% 50%}
+    100% {background-position:0% 50%}
+}
+
+.profile-img {
+    border: 6px solid #fff8dc;
+    box-shadow: 0 8px 32px rgba(128,55,201,0.12);
+    transition: transform 0.3s;
+}
+.profile-img:hover {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.2s cubic-bezier(.77,0,.18,1), transform 1.2s cubic-bezier(.77,0,.18,1);
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: none;
+}
+
+.section-title i {
+    margin-right: 10px;
+    color: #9062a5;
+}
+
+.skill-card i {
+    margin-right: 8px;
+    font-size: 1.3em;
+}
+
+.card-title i {
+    margin-right: 8px;
+    color: #9062a5;
+}
+
+.contact-box i {
+    margin-right: 8px;
+    color: #9062a5;
+}
+
+/* Subtle hover for cards */
+.card:hover {
+    box-shadow: 0 8px 32px rgba(128,55,201,0.18);
+    transform: translateY(-6px) scale(1.03);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px){
+    .hero-content {
+        padding: 2rem 0.5rem;
+        background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+        border-radius: 20px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+    .profile-img {width: 120px !important; height: 120px !important;}
+    .section-title {font-size: 1.5rem;}
+    .card-title {font-size: 1.1rem;}
+}
     margin: 3;
     color: rgb(61, 25, 4);
     background-color: navajowhite;
